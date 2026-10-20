@@ -18,9 +18,9 @@ Seluruh data `events.csv` diimpor ke Neo4j. Periode waktu hanya berfungsi sebaga
 | Variabel | Unix timestamp (ms) | Waktu (UTC) |
 |---|---:|---|
 | `P1_start` | `1438387200000` | 2015-08-01 00:00:00 |
-| `P1_end` | `1439683200000` | 2015-08-16 00:00:00 |
+| `P1_end` | `1439683200000` | 2015-08-16 00:00:00 (eksklusif) |
 | `P2_start` | `1439683200000` | 2015-08-16 00:00:00 |
-| `P2_end` | `1440115200000` | 2015-08-21 00:00:00 |
+| `P2_end` | `1440115200000` | 2015-08-21 00:00:00 (eksklusif) |
 
 Syarat filter: `batas_awal <= timestamp < batas_akhir`. Syarat yang sama dipakai di pandas dan di Cypher (`WHERE r.timestamp >= $ts AND r.timestamp < $te`).
 
